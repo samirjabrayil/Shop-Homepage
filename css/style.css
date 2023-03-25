@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*------------ Header ------------*/
+
+header {
+    padding-top: 10px;
+    background-color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+#Logo {
+    font-size: 20px;
+    color: black;
+}
+
+.logo nav {
+    padding-left: 50px;
+}
+
+nav a {
+    padding-right: 20px;
+    color: #000;
+}
+
+.bar {
+    display: none;
+}
+
+.header-all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-button {
+    border: 1px solid black;
+    padding: 7px 13px;
+    border-radius: 6px;
+    transition: .5s;
+}
+
+.icon-button:hover {
+    background-color: #000;
+}
+
+.icon-button:hover i{
+    color: #ffffff;
+}
+
+.icon-button:hover span{
+    color: #ffffff;
+}
+
+.icon-button span {
+    padding: 5px;
+    color: #000;
+    transition: .5s;
+}
+
+/*--------------- Text-Box -----------*/
+
+#textbox {
+    background-color: #212529;
+    padding: 7rem 0;
+    margin-top: 1rem;
+}
+
+.text {
+    text-align: center;
+}
+
+.text h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.text p {
+    color: gray;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/*------------ Products -------------*/
+
+.box img {
+    width: 100%;
+    vertical-align: bottom;
+    border: 1px solid rgb(199, 199, 199); 
+    border-radius: 7px 7px 0 0;
+
+}
+
+.box {
+    text-align: center;
+    border-radius: 7px;
+    border: 1px solid rgb(199, 199, 199);
+    position: relative;
+}
+
+.box h1 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.box p {
+    font-size: 16px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.box .button a {
+    border: 1px solid black;
+    padding: 10px 10px;
+    color: black;
+}
+
+.box .button a:hover {
+    background-color: black;
+    color: white;
+}
+
+
+.box .button {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+.prd-sale {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #000;
+    color: white;
+    padding: 4px 6px;
+    border-radius: 7px;
+}
+
+/*------------ MEDIA ----------------*/
+
+@media (max-width:576px) {
+
+    .icon-nav {
+        display: none;
+    }
+
+    .logo nav {
+        display: none;
+    }
+
+    /*------------ Header -----------*/
+
+    .bar {
+        display: block;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .logo a {
+        font-size: 20px;
+        color: black;
+    }
+
+    .header-all {
+        padding: 15px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-all .bar i {
+        font-size: 20px;
+        border: 2px solid rgb(177, 177, 177);
+        padding: 7px 15px;
+        border-radius: 7px;
+        color: gray;
+    }
+
+    /*--------------- Text-Box -----------*/
+
+    #textbox {
+        background-color: #212529;
+        padding: 6rem 0;
+    }
+
+    .text {
+        text-align: center;
+    }
+
+    .text h1 {
+        color: white;
+        font-size: 34.4px;
+        font-weight: 700;
+    }
+
+    .text p {
+        color: gray;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    /*------------ Products -------------*/
+
+
+    .box {
+        text-align: center;
+        border-radius: 8px;
+        border: 1px solid gray;
+        position: relative;
+    }
+
+    .box h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .box p {
+        font-size: 16px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .box .button a {
+        border: 1px solid black;
+        padding: 10px 10px;
+        color: black;
+    }
+
+    .box .button {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .prd-sale {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: #000;
+        color: white;
+        padding: 4px 6px;
+        border-radius: 7px;
+    }
+}
